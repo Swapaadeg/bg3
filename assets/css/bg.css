@@ -10,13 +10,13 @@
 }
 
 .container{
-    max-width: 1280px;
     margin: 0;
     padding: 0px;
 }
 body {
     margin: 0 auto;
 }
+
 h1, h2, h3, h4{
     font-family: "Medieval";
     text-transform: uppercase;
@@ -49,18 +49,28 @@ li {
 
 /* debut header */
 
-.header__wrapper {
-    background-image: url(../img/cloud-header.png);
-    width: 100%;
-    height: 84vh;
-    z-index: -1;
-    position: relative;
-}
 #background-video {
     width: 100%;
+    height: 100vh;
     object-fit: cover;
+    z-index: -1;
+}
+
+.header__wrapper {
+    background-image: url(../img/cloud-header.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    z-index: 0;
+    transform: translate(400%, -140%);
 }
 
 .btn-secondary {
@@ -80,19 +90,28 @@ li {
     align-items: center;
     justify-content: space-between;
 }
+
 .menu {
     display: flex;
+    transform: translateX(-40%);
     gap: 1.5rem;
-    transform: translateX(-25%);
 }
+
 .nav-header img {
-    width: 12%;
+    width: 15%;
     transform: translateX(50%);
 }
 
-.title {
+/* awards */
+
+.awards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateY(150%);    
+    border: solid 1px black;
+    max-width: 60%;
+}
+
+.awards img {
+    width: 25%;
+    height: 25%;
+
 }

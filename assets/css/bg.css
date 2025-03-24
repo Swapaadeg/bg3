@@ -9,12 +9,16 @@
     src: url(../fonts/Gothic_A1/GothicA1-Regular.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
 .container{
     margin: 0;
     padding: 0px;
 }
 body {
     margin: 0 auto;
+    background-image: url(../img/smoke-bg.jpg);
 }
 
 h1, h2, h3, h4{
@@ -106,16 +110,15 @@ li {
 
 /* awards */
 
-.award-race {
-    background-image: url(../img/smoke-bg.jpg);
-    background-size: cover;
+.bgrace {
     width: 100%;
     height: 100vh;
     z-index: -1;
+} 
+.award-race {
     display: flex;
     justify-content: center;
-    align-items: start;
-
+    align-items: center;
 }
 
 .awards__wrapper {
@@ -128,14 +131,56 @@ li {
     display: flex;
     justify-content: space-around;
     margin-top: 6rem;
-    padding: 20px 20px;
+    padding: 20px 20px 0 20px;
 }
+
 
 .awards__wrapper img {
-    width: 15%;
-    height: 15%;
+    width: 12%;
+    height: 12%;
 }
 
-.awards__wrapper h3 {
-    margin-top: 0;
+
+/* Race */
+
+.race-presentation {
+    margin-top: 6rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.races__wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.race {
+    border: #ddc9a7 1px solid;
+    border-radius: 10px;
+    padding: 2rem 7rem 2rem 7rem;
+    width: 40%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/races-bg.jpg);
+    background-size: cover;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+
+
+
+
+.elfsolo { 
+    border: #ddc9a7 1px solid;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.arrow {
+    width: 5%;
 }

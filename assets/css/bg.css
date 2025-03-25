@@ -9,12 +9,18 @@
     src: url(../fonts/Gothic_A1/GothicA1-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Gothic thin";
+    src: url(../fonts/Gothic_A1/GothicA1-Thin.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
 .container{
     margin: 0;
-    padding: 0 6rem 0 6rem
+    padding: 0 8rem 0 8rem;
+    max-width: 100%
 }
 body {
     margin: 0 auto;
@@ -62,9 +68,9 @@ li {
     background-repeat: no-repeat;
     position: fixed;
     width: 100%;
+    height: 30vh;
     z-index: 2;
 }
-
 
 .nav-header {
     display: flex;
@@ -79,7 +85,6 @@ li {
 
 .nav-header img {
     width: 15%;
-    
 }
 
 /* Hero */
@@ -94,8 +99,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    transform: translate(350%, -140%);
+    transform: translatey(-15rem);
 }
 
 .btn-secondary {
@@ -115,6 +119,7 @@ li {
     width: 100%;
     height: 100vh;
     z-index: -1;
+    margin-top: -12rem;
 } 
 .award-race {
     display: flex;
@@ -141,7 +146,6 @@ li {
     height: 12%;
 }
 
-
 /* Race */
 
 .race-presentation {
@@ -149,9 +153,11 @@ li {
     margin-left: 10%;
     margin-right: 10%;
 }
+
 .race-presentation h3{
-    margin-left: 6rem;
+    margin-left: 8rem;
 }
+
 .races__wrapper {
     display: flex;
     gap: 4rem;
@@ -236,8 +242,43 @@ li {
 }
 
 /* Buy now section */
+
 .buy__wrapper {
     margin-top: 20%;
     background-image: url(../img/buy-now-background.jpg);
     background-size: cover;
+    width: 100%;
+    display: flex;
+}
+
+.buy__wrapper img {
+    width: 100%;
+    margin: 6rem;
+}
+
+.buy-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+}
+
+.buy-content h3 {
+    margin: 0;
+}
+.buy__wrapper ul {
+    display: flex;
+    justify-content: start;
+    gap: 0.5rem;
+    margin-left: -2.5rem;
+}
+
+.btn-tertiary {
+    padding: 8px 10px;
+    border: #ddc9a7 solid 1px;
+    border-radius: 10px;
+    color: white;
+}
+
+.buy__wrapper .text {
+    font-family: "Gothic thin";
 }
